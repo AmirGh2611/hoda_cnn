@@ -8,7 +8,7 @@ def load_hoda(training_sample_size=4000, test_sample_size=800, size=32):
     # load dataset
     trs = training_sample_size
     tes = test_sample_size
-    dataset = io.loadmat("Data_hoda_full.mat")
+    dataset = io.loadmat("data_hoda_full.mat")
 
     # test and training set
     x_train_orginal = np.squeeze(dataset['Data'][:trs])
